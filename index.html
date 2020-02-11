@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title> FullScreen-Slider By Mi Fe corporation </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/font-awesome.css">	
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+	<div class="wrapper">
+			<div class="slider">
+					<div id="slides" class="explode">			
+						<div class="">
+							<img src="images/img1.jpg" alt="img1">					
+						</div>
+
+						<div>
+							<img src="images/img2.jpg" alt="img2">
+						</div>
+
+						<div>
+							<img src="images/img3.jpg" alt="img3">
+						</div>
+
+						<div>
+							<img src="images/img4.jpg" alt="img4">
+						</div>
+						<div>
+							<img src="images/img5.jpg" alt="img5">					
+						</div>
+
+						<div>
+							<img src="images/img6.jpg" alt="img6">
+						</div>
+						<div>
+							<img src="images/img7.jpg" alt="img7">					
+						</div>
+
+						<div>
+							<img src="images/img8.jpg" alt="img8">
+						</div>
+
+						<div>
+							<img src="images/img9.jpg" alt="img9">
+						</div>
+
+						
+					</div>
+
+					<div id="image_container">
+						<i class="fa fa-angle-up"> </i>
+						<div class="copy_section"> </div>
+						<i class="fa fa-angle-down"> </i>
+					</div>
+				</div>
+
+			<div class="container">
+				<button id="explode">Explode</button>
+				<button id="bars-down">Bars-down</button>
+				<button id="bars-right">Bars-right</button>
+			</div>		
+		</div>
+
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="js/jquery-ui-1.10.3.min.js"></script>
+		<script src="js/common.js"></script>
+
+		<script id="script" src="js/explode.js"></script>
+		<script id="script" src="js/bars.js"></script>
+
+		<script type="text/javascript">
+			(function(){
+				$('button#explode').click(function(){
+					$('#slides').removeClass().addClass('explode');
+				});
+
+				$('button#bars-down').click(function(){
+					$('#slides').removeClass().addClass('bars-down');
+				});				
+
+			})(jQuery);
+		</script>
+
+		
+	</body>
+</html>
